@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://yiyangwang.us/Friends/index.html</loc>
+    <loc>https://yiyangwang.us/friends/index.html</loc>
     
     <lastmod>2018-01-20T15:07:16.069Z</lastmod>
     
@@ -23,14 +23,14 @@
   </url>
   
   <url>
-    <loc>https://yiyangwang.us/2017-06-08/cloudflare-set-dynamic-dns/</loc>
+    <loc>https://yiyangwang.us/2017-05-30/gopro-evaluation/</loc>
     
     <lastmod>2018-01-20T13:19:31.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://yiyangwang.us/2017-05-30/gopro-evaluation/</loc>
+    <loc>https://yiyangwang.us/2017-06-08/cloudflare-set-dynamic-dns/</loc>
     
     <lastmod>2018-01-20T13:19:31.000Z</lastmod>
     
@@ -44,14 +44,14 @@
   </url>
   
   <url>
-    <loc>https://yiyangwang.us/2017-08-18/im-sorry/</loc>
+    <loc>https://yiyangwang.us/2017-05-13/hello-world/</loc>
     
     <lastmod>2018-01-20T13:19:31.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://yiyangwang.us/2017-05-13/hello-world/</loc>
+    <loc>https://yiyangwang.us/2017-08-18/im-sorry/</loc>
     
     <lastmod>2018-01-20T13:19:31.000Z</lastmod>
     
@@ -142,14 +142,14 @@
   </url>
   
   <url>
-    <loc>https://yiyangwang.us/2017-05-20/thanks-god/</loc>
+    <loc>https://yiyangwang.us/2018-01-16/test-from-arch/</loc>
     
     <lastmod>2018-01-20T13:19:31.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://yiyangwang.us/2018-01-16/test-from-arch/</loc>
+    <loc>https://yiyangwang.us/2017-05-20/thanks-god/</loc>
     
     <lastmod>2018-01-20T13:19:31.000Z</lastmod>
     
@@ -163,13 +163,6 @@
   </url>
   
   <url>
-    <loc>https://yiyangwang.us/2017-07-20/built-web-sdr-mirror/</loc>
-    
-    <lastmod>2018-01-20T13:19:31.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://yiyangwang.us/class/index.html</loc>
     
     <lastmod>2018-01-20T13:19:31.000Z</lastmod>
@@ -177,7 +170,7 @@
   </url>
   
   <url>
-    <loc>https://yiyangwang.us/tags/index.html</loc>
+    <loc>https://yiyangwang.us/2017-07-20/built-web-sdr-mirror/</loc>
     
     <lastmod>2018-01-20T13:19:31.000Z</lastmod>
     
@@ -185,6 +178,13 @@
   
   <url>
     <loc>https://yiyangwang.us/special-bumper-car-war/index.html</loc>
+    
+    <lastmod>2018-01-20T13:19:31.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yiyangwang.us/tags/index.html</loc>
     
     <lastmod>2018-01-20T13:19:31.000Z</lastmod>
     
