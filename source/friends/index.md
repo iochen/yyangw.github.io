@@ -5,7 +5,7 @@ date: 2018-01-20 22:56:21
 
 ## Links~
 
-* Sakura Blog: [https://www.crystalglass.ml/](https://www.crystalglass.ml/)
+* Sakura Blog: [https://frostedglass.ml/](https://frostedglass.ml/)
 
 
 * 月宅酱: [https://ikmoe.com/](https://ikmoe.com/)
