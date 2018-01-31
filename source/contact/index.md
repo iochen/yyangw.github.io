@@ -41,6 +41,8 @@ d0k8mLHztCWg2l2/6FaRPQWqRGqQgDNFVI6KqpnZAArRTvCj38qvqflsyZ9CjkMY
 -----END PGP PUBLIC KEY BLOCK-----
 ```
 
+* Key: [yiyangwang.us/contact/key_YYangW.asc](https://yiyangwang.us/contact/key_YYangW.asc)
+
 ## 联系方式
 
 * Email: 

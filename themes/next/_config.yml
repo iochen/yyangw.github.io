@@ -115,7 +115,7 @@ menu:
   sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
   Friends: /friends/ || friends
-  'Contect & PGP_Key': /contect/ || contect
+  'Contact & PGP_Key': /contact/ || contact
 
 # Enable/Disable menu icons / item badges.
 menu_settings:
