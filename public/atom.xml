@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yiyangwang.us/"/>
-  <updated>2018-01-20T13:19:31.000Z</updated>
+  <updated>2018-02-02T09:31:20.085Z</updated>
   <id>https://yiyangwang.us/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://yiyangwang.us/2018-01-17/mistakes-in-arch-installation/"/>
     <id>https://yiyangwang.us/2018-01-17/mistakes-in-arch-installation/</id>
     <published>2018-01-17T09:05:15.000Z</published>
-    <updated>2018-01-20T13:19:31.000Z</updated>
+    <updated>2018-02-02T09:31:20.085Z</updated>
     
     <summary type="html">
     
@@ -42,7 +42,7 @@
     <link href="https://yiyangwang.us/2018-01-16/test-from-arch/"/>
     <id>https://yiyangwang.us/2018-01-16/test-from-arch/</id>
     <published>2018-01-16T11:51:34.000Z</published>
-    <updated>2018-01-20T13:19:31.000Z</updated>
+    <updated>2018-02-02T09:31:20.135Z</updated>
     
     <summary type="html">
     
@@ -63,7 +63,7 @@
     <link href="https://yiyangwang.us/2017-12-03/math-summary-1/"/>
     <id>https://yiyangwang.us/2017-12-03/math-summary-1/</id>
     <published>2017-12-03T11:47:07.000Z</published>
-    <updated>2018-01-20T13:19:31.000Z</updated>
+    <updated>2018-02-02T09:31:20.068Z</updated>
     
     <summary type="html">
     
@@ -81,7 +81,7 @@
     <link href="https://yiyangwang.us/2017-11-04/miniwhip-and-sdrplay-compatible-test/"/>
     <id>https://yiyangwang.us/2017-11-04/miniwhip-and-sdrplay-compatible-test/</id>
     <published>2017-11-04T06:55:47.000Z</published>
-    <updated>2018-01-20T13:19:31.000Z</updated>
+    <updated>2018-02-02T09:31:20.068Z</updated>
     
     <summary type="html">
     
@@ -102,7 +102,7 @@
     <link href="https://yiyangwang.us/2017-11-04/miniwip-and-new-receiver-trailer/"/>
     <id>https://yiyangwang.us/2017-11-04/miniwip-and-new-receiver-trailer/</id>
     <published>2017-11-04T06:03:35.000Z</published>
-    <updated>2018-01-20T13:19:31.000Z</updated>
+    <updated>2018-02-02T09:31:20.085Z</updated>
     
     <summary type="html">
     
@@ -124,7 +124,7 @@
     <link href="https://yiyangwang.us/2017-08-18/im-sorry/"/>
     <id>https://yiyangwang.us/2017-08-18/im-sorry/</id>
     <published>2017-08-18T12:25:42.000Z</published>
-    <updated>2018-01-20T13:19:31.000Z</updated>
+    <updated>2018-02-02T09:31:19.918Z</updated>
     
     <summary type="html">
     
@@ -145,7 +145,7 @@
     <link href="https://yiyangwang.us/2017-08-03/linfax-guide/"/>
     <id>https://yiyangwang.us/2017-08-03/linfax-guide/</id>
     <published>2017-08-03T12:23:24.000Z</published>
-    <updated>2018-01-20T13:19:31.000Z</updated>
+    <updated>2018-02-02T09:31:20.058Z</updated>
     
     <summary type="html">
     
@@ -155,9 +155,9 @@
     </summary>
     
     
-      <category term="Network" scheme="https://yiyangwang.us/tags/Network/"/>
-    
       <category term="Linux" scheme="https://yiyangwang.us/tags/Linux/"/>
+    
+      <category term="Network" scheme="https://yiyangwang.us/tags/Network/"/>
     
   </entry>
   
@@ -166,7 +166,7 @@
     <link href="https://yiyangwang.us/2017-07-24/receive-shanghai-radio-fax/"/>
     <id>https://yiyangwang.us/2017-07-24/receive-shanghai-radio-fax/</id>
     <published>2017-07-24T08:14:05.000Z</published>
-    <updated>2018-01-20T13:19:31.000Z</updated>
+    <updated>2018-02-02T09:31:20.105Z</updated>
     
     <summary type="html">
     
@@ -185,7 +185,7 @@
     <link href="https://yiyangwang.us/2017-07-20/built-web-sdr-mirror/"/>
     <id>https://yiyangwang.us/2017-07-20/built-web-sdr-mirror/</id>
     <published>2017-07-20T11:30:03.000Z</published>
-    <updated>2018-01-20T13:19:31.000Z</updated>
+    <updated>2018-02-02T09:31:19.885Z</updated>
     
     <summary type="html">
     
@@ -194,9 +194,9 @@
     </summary>
     
     
-      <category term="Network" scheme="https://yiyangwang.us/tags/Network/"/>
-    
       <category term="Linux" scheme="https://yiyangwang.us/tags/Linux/"/>
+    
+      <category term="Network" scheme="https://yiyangwang.us/tags/Network/"/>
     
   </entry>
   
@@ -205,7 +205,7 @@
     <link href="https://yiyangwang.us/2017-07-19/rtlsdr-i-branch/"/>
     <id>https://yiyangwang.us/2017-07-19/rtlsdr-i-branch/</id>
     <published>2017-07-19T12:17:09.000Z</published>
-    <updated>2018-01-20T13:19:31.000Z</updated>
+    <updated>2018-02-02T09:31:20.115Z</updated>
     
     <summary type="html">
     
@@ -223,7 +223,7 @@
     <link href="https://yiyangwang.us/2017-07-13/still-alive/"/>
     <id>https://yiyangwang.us/2017-07-13/still-alive/</id>
     <published>2017-07-13T12:14:14.000Z</published>
-    <updated>2018-01-20T13:19:31.000Z</updated>
+    <updated>2018-02-02T09:31:20.135Z</updated>
     
     <summary type="html">
     
@@ -244,7 +244,7 @@
     <link href="https://yiyangwang.us/2017-07-08/receive-jmh-fax-on-fedora/"/>
     <id>https://yiyangwang.us/2017-07-08/receive-jmh-fax-on-fedora/</id>
     <published>2017-07-08T05:24:52.000Z</published>
-    <updated>2018-01-20T13:19:31.000Z</updated>
+    <updated>2018-02-02T09:31:20.085Z</updated>
     
     <summary type="html">
     
@@ -254,9 +254,9 @@
     </summary>
     
     
-      <category term="Network" scheme="https://yiyangwang.us/tags/Network/"/>
-    
       <category term="Linux" scheme="https://yiyangwang.us/tags/Linux/"/>
+    
+      <category term="Network" scheme="https://yiyangwang.us/tags/Network/"/>
     
   </entry>
   
@@ -265,7 +265,7 @@
     <link href="https://yiyangwang.us/2017-06-11/build-pcem-on-fedora/"/>
     <id>https://yiyangwang.us/2017-06-11/build-pcem-on-fedora/</id>
     <published>2017-06-11T06:00:21.000Z</published>
-    <updated>2018-01-20T13:19:31.000Z</updated>
+    <updated>2018-02-02T09:31:19.885Z</updated>
     
     <summary type="html">
     
@@ -287,7 +287,7 @@
     <link href="https://yiyangwang.us/2017-06-08/cloudflare-set-dynamic-dns/"/>
     <id>https://yiyangwang.us/2017-06-08/cloudflare-set-dynamic-dns/</id>
     <published>2017-06-08T03:50:05.000Z</published>
-    <updated>2018-01-20T13:19:31.000Z</updated>
+    <updated>2018-02-02T09:31:19.895Z</updated>
     
     <summary type="html">
     
@@ -299,9 +299,9 @@
     </summary>
     
     
-      <category term="Network" scheme="https://yiyangwang.us/tags/Network/"/>
-    
       <category term="Linux" scheme="https://yiyangwang.us/tags/Linux/"/>
+    
+      <category term="Network" scheme="https://yiyangwang.us/tags/Network/"/>
     
   </entry>
   
@@ -310,7 +310,7 @@
     <link href="https://yiyangwang.us/2017-06-07/soviet-computer-history/"/>
     <id>https://yiyangwang.us/2017-06-07/soviet-computer-history/</id>
     <published>2017-06-07T06:21:06.000Z</published>
-    <updated>2018-01-20T13:19:31.000Z</updated>
+    <updated>2018-02-02T09:31:20.128Z</updated>
     
     <summary type="html">
     
@@ -333,7 +333,7 @@
     <link href="https://yiyangwang.us/2017-05-30/hashover-embellish/"/>
     <id>https://yiyangwang.us/2017-05-30/hashover-embellish/</id>
     <published>2017-05-30T11:28:18.000Z</published>
-    <updated>2018-01-20T13:19:31.000Z</updated>
+    <updated>2018-02-02T09:31:19.918Z</updated>
     
     <summary type="html">
     
@@ -342,9 +342,9 @@
     </summary>
     
     
-      <category term="Network" scheme="https://yiyangwang.us/tags/Network/"/>
-    
       <category term="Linux" scheme="https://yiyangwang.us/tags/Linux/"/>
+    
+      <category term="Network" scheme="https://yiyangwang.us/tags/Network/"/>
     
   </entry>
   
@@ -353,7 +353,7 @@
     <link href="https://yiyangwang.us/2017-05-30/gopro-evaluation/"/>
     <id>https://yiyangwang.us/2017-05-30/gopro-evaluation/</id>
     <published>2017-05-30T04:54:34.000Z</published>
-    <updated>2018-01-20T13:19:31.000Z</updated>
+    <updated>2018-02-02T09:31:19.895Z</updated>
     
     <summary type="html">
     
@@ -373,7 +373,7 @@
     <link href="https://yiyangwang.us/2017-05-27/hashover-setup/"/>
     <id>https://yiyangwang.us/2017-05-27/hashover-setup/</id>
     <published>2017-05-27T13:06:05.000Z</published>
-    <updated>2018-01-20T13:19:31.000Z</updated>
+    <updated>2018-02-02T09:31:19.918Z</updated>
     
     <summary type="html">
     
@@ -386,9 +386,9 @@
     </summary>
     
     
-      <category term="Network" scheme="https://yiyangwang.us/tags/Network/"/>
-    
       <category term="Linux" scheme="https://yiyangwang.us/tags/Linux/"/>
+    
+      <category term="Network" scheme="https://yiyangwang.us/tags/Network/"/>
     
   </entry>
   
@@ -397,7 +397,7 @@
     <link href="https://yiyangwang.us/2017-05-20/thanks-god/"/>
     <id>https://yiyangwang.us/2017-05-20/thanks-god/</id>
     <published>2017-05-20T12:38:42.000Z</published>
-    <updated>2018-01-20T13:19:31.000Z</updated>
+    <updated>2018-02-02T09:31:20.135Z</updated>
     
     <summary type="html">
     
@@ -419,7 +419,7 @@
     <link href="https://yiyangwang.us/2017-05-13/learning-agricultural-production-1/"/>
     <id>https://yiyangwang.us/2017-05-13/learning-agricultural-production-1/</id>
     <published>2017-05-13T13:40:51.000Z</published>
-    <updated>2018-01-20T13:19:31.000Z</updated>
+    <updated>2018-02-02T09:31:19.918Z</updated>
     
     <summary type="html">
     
