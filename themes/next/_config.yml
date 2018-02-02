@@ -445,7 +445,7 @@ gitment:
   cleanly: false # Hide 'Powered by ...' on footer, and more
   language: en # Force language, or auto switch by theme
   github_user: yyangw # MUST HAVE, Your Github Username
-  github_repo: yiyangwang-us-source # MUST HAVE, The name of the repo you use to store Gitment comments
+  github_repo: yyangw.github.io # MUST HAVE, The name of the repo you use to store Gitment comments
   client_id: 7b8c66f5d0d4d58448bb # MUST HAVE, Github client id for the Gitment
   client_secret: 104e53ccc7eae38e78a382307e1991167f1ffab3 # EITHER this or proxy_gateway, Github access secret token for the Gitment
   proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
@@ -492,7 +492,7 @@ needmoreshare2:
       iconStyle: default
       boxForm: horizontal
       position: middleRight
-      networks: Twitter,Facebook,Wechat
+      networks: 'Wechat,Twitter,Facebook,GooglePlus'
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
