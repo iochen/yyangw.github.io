@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Yiyang Wang</title>
+  
+  <subtitle>就当我在瞎折腾</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://yiyangwang.us/"/>
+  <updated>2018-02-02T09:31:20.085Z</updated>
+  <id>https://yiyangwang.us/</id>
+  
+  <author>
+    <name>@YYangW</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>悉数 Arch Linux 安装过程中踩过的那些坑</title>
+    <link href="https://yiyangwang.us/2018-01-17/mistakes-in-arch-installation/"/>
+    <id>https://yiyangwang.us/2018-01-17/mistakes-in-arch-installation/</id>
+    <published>2018-01-17T09:05:15.000Z</published>
+    <updated>2018-02-02T09:31:20.085Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;0-软件源&quot;&gt;&lt;a href=&quot;#0-软件源&quot; class=&quot;headerlink&quot; title=&quot;0. 软件源&quot;&gt;&lt;/a&gt;0. 软件源&lt;/h2&gt;&lt;p&gt;在 USB引导的 Arch Linux 环境中默认的软件源在美国，由于中国是一个神奇的国度，所以需要替换为 中国的镜像  &lt;a href=&quot;https://www.jianshu.com/p/fe2165cc6af8&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;这篇简书上的教程&lt;/a&gt; 的作者推荐用 nano 编辑器 手动将软件源复制粘贴到前方，但实际操作中比较复杂，所以博主推荐另一种方法：&lt;br&gt;使用如下指令从 Arch Linux Wiki 下载并替换 /etc/pacman.d/mirrorlist ：&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;wget -O /etc/pacman.d/mirrorlist https://www.archlinux.org/mirrorlist/all/https/&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;接下来编辑 /etc/pacman.d/mirrorlist ，找到 China 部分，将软件源前面的注释去掉，然后使用如下指令：&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;pacman -Syy&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;pacman -S --force pacman-mirrorlist&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="https://yiyangwang.us/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>测试，来自 Arch Linux</title>
+    <link href="https://yiyangwang.us/2018-01-16/test-from-arch/"/>
+    <id>https://yiyangwang.us/2018-01-16/test-from-arch/</id>
+    <published>2018-01-16T11:51:34.000Z</published>
+    <updated>2018-02-02T09:31:20.135Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;一个意外&quot;&gt;&lt;a href=&quot;#一个意外&quot; class=&quot;headerlink&quot; title=&quot;一个意外&quot;&gt;&lt;/a&gt;一个意外&lt;/h2&gt;&lt;p&gt;博主本来想搞一个 Windows 10 和 Fedora 双系统，采用 grub 引导。奈何安装后引导出现了问题，当时已经深
+      
+    
+    </summary>
+    
+    
+      <category term="test" scheme="https://yiyangwang.us/tags/test/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>初三数学总结 (1)</title>
+    <link href="https://yiyangwang.us/2017-12-03/math-summary-1/"/>
+    <id>https://yiyangwang.us/2017-12-03/math-summary-1/</id>
+    <published>2017-12-03T11:47:07.000Z</published>
+    <updated>2018-02-02T09:31:20.068Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;博主再次诈尸&quot;&gt;&lt;a href=&quot;#博主再次诈尸&quot; class=&quot;headerlink&quot; title=&quot;博主再次诈尸&quot;&gt;&lt;/a&gt;博主再次诈尸&lt;/h2&gt;&lt;p&gt;最近博主学校老师要求总结初三数学的一部分知识点。许多人选择用Microsoft Office Word，但是操作方式意味着输入大量数学公式需要频繁的进行鼠标/键盘的切换，影响效率。而LaTeX的操作过于繁琐，同时这篇文档也不用于专业用途，所以博主选择了Markdown，同时使用Typora作为编辑器&lt;br&gt;Typora富有创新性的去除了Preview模式，真正实现了实时预览，对于写作的效率也进一步增强&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="Life" scheme="https://yiyangwang.us/tags/Life/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Miniwhip &amp; SDRPlay RSP1 Compatible</title>
+    <link href="https://yiyangwang.us/2017-11-04/miniwhip-and-sdrplay-compatible-test/"/>
+    <id>https://yiyangwang.us/2017-11-04/miniwhip-and-sdrplay-compatible-test/</id>
+    <published>2017-11-04T06:55:47.000Z</published>
+    <updated>2018-02-02T09:31:20.068Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;PA0RDT-Mini-Whip&quot;&gt;&lt;a href=&quot;#PA0RDT-Mini-Whip&quot; class=&quot;headerlink&quot; title=&quot;PA0RDT Mini Whip&quot;&gt;&lt;/a&gt;PA0RDT Mini Whip&lt;/h1&gt;&lt;p&gt;PA0RDT Mini Whip是一款很小巧的天线，起初博主的电磁环境很差，各种干扰层出不穷… 以至于只能用websdr进行收听。&lt;/p&gt;
+&lt;p&gt;博主好友向我推荐了MiniWhip天线，Google一番之后被这款天线惊艳到了，短波天线可以做到这么小。YouTube看到测评后，博主决定购买。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Windows" scheme="https://yiyangwang.us/tags/Windows/"/>
+    
+      <category term="SDR" scheme="https://yiyangwang.us/tags/SDR/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>博主诈尸了, Miniwhip &amp; SDRPlay RSP1 Compatible体验 预告</title>
+    <link href="https://yiyangwang.us/2017-11-04/miniwip-and-new-receiver-trailer/"/>
+    <id>https://yiyangwang.us/2017-11-04/miniwip-and-new-receiver-trailer/</id>
+    <published>2017-11-04T06:03:35.000Z</published>
+    <updated>2018-02-02T09:31:20.085Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;博主诈尸了&quot;&gt;&lt;a href=&quot;#博主诈尸了&quot; class=&quot;headerlink&quot; title=&quot;博主诈尸了&quot;&gt;&lt;/a&gt;博主诈尸了&lt;/h2&gt;&lt;p&gt;博主已经初三了，blog荒废了好久，很长时间没有更新文章了&lt;/p&gt;
+&lt;p&gt;最近，博主收(duo)到(shou)了Mi
+      
+    
+    </summary>
+    
+    
+      <category term="SDR" scheme="https://yiyangwang.us/tags/SDR/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>博主的忏悔...</title>
+    <link href="https://yiyangwang.us/2017-08-18/im-sorry/"/>
+    <id>https://yiyangwang.us/2017-08-18/im-sorry/</id>
+    <published>2017-08-18T12:25:42.000Z</published>
+    <updated>2018-02-02T09:31:19.918Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;忏悔，关于HamFax&quot;&gt;&lt;a href=&quot;#忏悔，关于HamFax&quot; class=&quot;headerlink&quot; title=&quot;忏悔，关于HamFax&quot;&gt;&lt;/a&gt;忏悔，关于HamFax&lt;/h2&gt;&lt;p&gt;实际上也许开始LinFax项目就是一个错误，没有读懂HamFax的代
+      
+    
+    </summary>
+    
+    
+      <category term="Life" scheme="https://yiyangwang.us/tags/Life/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>博主开发的软件 —— LinFax使用教程</title>
+    <link href="https://yiyangwang.us/2017-08-03/linfax-guide/"/>
+    <id>https://yiyangwang.us/2017-08-03/linfax-guide/</id>
+    <published>2017-08-03T12:23:24.000Z</published>
+    <updated>2018-02-02T09:31:20.058Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;LinFax&quot;&gt;&lt;a href=&quot;#LinFax&quot; class=&quot;headerlink&quot; title=&quot;LinFax&quot;&gt;&lt;/a&gt;LinFax&lt;/h2&gt;&lt;p&gt;Linux原生的气象传真软件有ACFax，HamFax等，但是ACFax长期没有更新，HamFax支持ALSA和PulseAudio… 看起来HamFax就是最完美的解决方案，然而：扫描出来的图像像素比例失真，对比Windows上面的软件，KG-FAX可以看出不同。于是，博主在HamFax的基础上开发了LinFax&lt;/p&gt;
+&lt;p&gt;  &lt;img src=&quot;https://yiyangwang.us/2017-08-03/linfax-guide/0.jpg&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="https://yiyangwang.us/tags/Linux/"/>
+    
+      <category term="Network" scheme="https://yiyangwang.us/tags/Network/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>接收上海海岸电台气象传真</title>
+    <link href="https://yiyangwang.us/2017-07-24/receive-shanghai-radio-fax/"/>
+    <id>https://yiyangwang.us/2017-07-24/receive-shanghai-radio-fax/</id>
+    <published>2017-07-24T08:14:05.000Z</published>
+    <updated>2018-02-02T09:31:20.105Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;博主在位于北京丰台南苑的家中面对瀑布图，发现了一个奇怪的气象传真信号，于是开始了一番搜寻，且听我慢慢道来…&lt;/p&gt;
+&lt;p&gt;  &lt;img src=&quot;https://yiyangwang.us/2017-07-24/receive-shanghai-radio-fax/0.jpg&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="https://yiyangwang.us/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>搭建了一个共享sdr镜像站点</title>
+    <link href="https://yiyangwang.us/2017-07-20/built-web-sdr-mirror/"/>
+    <id>https://yiyangwang.us/2017-07-20/built-web-sdr-mirror/</id>
+    <published>2017-07-20T11:30:03.000Z</published>
+    <updated>2018-02-02T09:31:19.885Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;sdr-hu&quot;&gt;&lt;a href=&quot;#sdr-hu&quot; class=&quot;headerlink&quot; title=&quot;sdr.hu&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://sdr.hu/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;sdr.hu&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;在这个站点上面有来自全世界各地的在线sdr，但是其中大部分服务器都在国外，访问不稳定。同时不支持https，信息容易泄露。博主搭建了一个镜像站点。&lt;br&gt;  &lt;img src=&quot;https://yiyangwang.us/2017-07-20/built-web-sdr-mirror/0.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="https://yiyangwang.us/tags/Linux/"/>
+    
+      <category term="Network" scheme="https://yiyangwang.us/tags/Network/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用 rtl2832u + r820t2 电视棒 i通道改装接收短波</title>
+    <link href="https://yiyangwang.us/2017-07-19/rtlsdr-i-branch/"/>
+    <id>https://yiyangwang.us/2017-07-19/rtlsdr-i-branch/</id>
+    <published>2017-07-19T12:17:09.000Z</published>
+    <updated>2018-02-02T09:31:20.115Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;博客好几天没有更新了，&lt;del&gt;说好了暑假每天更新一篇的呢&lt;/del&gt;，&lt;strong&gt;暑假一定不能荒废掉&lt;/strong&gt;。&lt;br&gt;今天这篇文章，就粗略介绍下如何利用 rtl2832u + r820t2 电视棒的i通道改装接收短波&lt;br&gt;  &lt;img src=&quot;https://yiyangwang.us/2017-07-19/rtlsdr-i-branch/0.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="https://yiyangwang.us/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《有的人》</title>
+    <link href="https://yiyangwang.us/2017-07-13/still-alive/"/>
+    <id>https://yiyangwang.us/2017-07-13/still-alive/</id>
+    <published>2017-07-13T12:14:14.000Z</published>
+    <updated>2018-02-02T09:31:20.135Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;作者：臧克家&quot;&gt;&lt;a href=&quot;#作者：臧克家&quot; class=&quot;headerlink&quot; title=&quot;作者：臧克家&quot;&gt;&lt;/a&gt;作者：臧克家&lt;/h2&gt;&lt;p&gt;有的人活着&lt;br&gt;他已经死了；&lt;br&gt;有的人死了&lt;br&gt;他还活着。&lt;br&gt;有的人&lt;br&gt;骑在人民头上：“呵，
+      
+    
+    </summary>
+    
+    
+      <category term="Life" scheme="https://yiyangwang.us/tags/Life/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在 Fedora 系统下使用 wine 运行KG-FAX接收气象传真</title>
+    <link href="https://yiyangwang.us/2017-07-08/receive-jmh-fax-on-fedora/"/>
+    <id>https://yiyangwang.us/2017-07-08/receive-jmh-fax-on-fedora/</id>
+    <published>2017-07-08T05:24:52.000Z</published>
+    <updated>2018-02-02T09:31:20.085Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;气象传真&quot;&gt;&lt;a href=&quot;#气象传真&quot; class=&quot;headerlink&quot; title=&quot;气象传真&quot;&gt;&lt;/a&gt;气象传真&lt;/h2&gt;&lt;p&gt;世界各地气象部门经常利用无线电发送气象传真，为在海上航行的船只提供帮助，过去需要使用专业的气象传真接收机才可以接收，而SDR的出现，使得只要使用一台计算机和一个SDR接收机就可以接收气象传真。&lt;/p&gt;
+&lt;p&gt;  &lt;img src=&quot;https://yiyangwang.us/2017-07-08/receive-jmh-fax-on-fedora/6.jpg&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="https://yiyangwang.us/tags/Linux/"/>
+    
+      <category term="Network" scheme="https://yiyangwang.us/tags/Network/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在 Fedora 系统下编译 PC 模拟器 PCem</title>
+    <link href="https://yiyangwang.us/2017-06-11/build-pcem-on-fedora/"/>
+    <id>https://yiyangwang.us/2017-06-11/build-pcem-on-fedora/</id>
+    <published>2017-06-11T06:00:21.000Z</published>
+    <updated>2018-02-02T09:31:19.885Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;PCem 是一款完美模拟老硬件环境的模拟器,如果你是古董游戏/软件的爱好者,那么千万不要错过它。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;img src=&quot;https://yiyangwang.us/2017-06-11/build-pcem-on-fedora/0.jpg&quot; alt=&quot;&quot;&gt;
+    
+    </summary>
+    
+    
+      <category term="Old School Computer" scheme="https://yiyangwang.us/tags/Old-School-Computer/"/>
+    
+      <category term="Computer History" scheme="https://yiyangwang.us/tags/Computer-History/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Fedora 中使用 CloudFlare 实现 Dynamic DNS (动态DNS) 解析</title>
+    <link href="https://yiyangwang.us/2017-06-08/cloudflare-set-dynamic-dns/"/>
+    <id>https://yiyangwang.us/2017-06-08/cloudflare-set-dynamic-dns/</id>
+    <published>2017-06-08T03:50:05.000Z</published>
+    <updated>2018-02-02T09:31:19.895Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Dynamic-DNS-的作用&quot;&gt;&lt;a href=&quot;#Dynamic-DNS-的作用&quot; class=&quot;headerlink&quot; title=&quot;Dynamic DNS 的作用&quot;&gt;&lt;/a&gt;Dynamic DNS 的作用&lt;/h2&gt;&lt;p&gt;Dynamic DNS提供了一个轻量化机制，让本地DNS数据库可以即时的更新。它能把互联网域名指往一个可能经常改变的IP地址，让经常改变位置及配置的设备，能够持续性的更新IP地址。令互联网上的外界用户可以通过一个大家知道的域名，连接到一个可能经常动态改变IP地址的机器。其中一个常用的用途是在使用动态IP地址连接（例如在每次接通连接就会被分配一个新的IP地址的拨号连接，或是偶尔会被ISP变更IP地址的DSL连接等）的电脑上运行服务器软件。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;img src=&quot;https://yiyangwang.us/2017-06-08/cloudflare-set-dynamic-dns/3.jpg&quot; alt=&quot; &quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="https://yiyangwang.us/tags/Linux/"/>
+    
+      <category term="Network" scheme="https://yiyangwang.us/tags/Network/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>苏联集团的计算机史 (1) 大型主机发展史</title>
+    <link href="https://yiyangwang.us/2017-06-07/soviet-computer-history/"/>
+    <id>https://yiyangwang.us/2017-06-07/soviet-computer-history/</id>
+    <published>2017-06-07T06:21:06.000Z</published>
+    <updated>2018-02-02T09:31:20.128Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://zh.wikipedia.org/wiki/%E6%9D%B1%E6%96%B9%E9%9B%86%E5%9C%98&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;苏联集团&lt;/a&gt;计算机发展的历史和&lt;a href=&quot;https://zh.wikipedia.org/wiki/%E8%A5%BF%E6%96%B9%E4%B8%96%E7%95%8C&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;西方世界&lt;/a&gt;有着些许不同，由于&lt;a href=&quot;https://zh.wikipedia.org/wiki/%E5%B7%B4%E9%BB%8E%E7%BB%9F%E7%AD%B9%E5%A7%94%E5%91%98%E4%BC%9A&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;巴黎统筹委员会&lt;/a&gt;的禁运，苏联集团无法从资本主义国家大规模进口计算机。所有的计算机硬件都是在社会主义国家设计、生产和制造的。那么这些苏联本土制造的计算机是什么样子的呢？且听我慢慢道来。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;img src=&quot;https://yiyangwang.us/2017-06-07/soviet-computer-history/0.jpg&quot; alt=&quot;Old School Computer&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="Old School Computer" scheme="https://yiyangwang.us/tags/Old-School-Computer/"/>
+    
+      <category term="Computer History" scheme="https://yiyangwang.us/tags/Computer-History/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hashover 美化教程</title>
+    <link href="https://yiyangwang.us/2017-05-30/hashover-embellish/"/>
+    <id>https://yiyangwang.us/2017-05-30/hashover-embellish/</id>
+    <published>2017-05-30T11:28:18.000Z</published>
+    <updated>2018-02-02T09:31:19.918Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在之前的&lt;a href=&quot;https://yiyangwang.us/2017-05-27/hashover-setup/&quot;&gt;文章&lt;/a&gt;中已经介绍了Hashover以及搭建的方法，那么在这篇文章中将介绍使用&lt;a href=&quot;https://zh.wikipedia.org/zh-hans/GIMP&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GIMP&lt;/a&gt;编辑Hashover中的图片（例如icon）对Hashover进行美化。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="https://yiyangwang.us/tags/Linux/"/>
+    
+      <category term="Network" scheme="https://yiyangwang.us/tags/Network/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GoPro Hero 5 照片展示</title>
+    <link href="https://yiyangwang.us/2017-05-30/gopro-evaluation/"/>
+    <id>https://yiyangwang.us/2017-05-30/gopro-evaluation/</id>
+    <published>2017-05-30T04:54:34.000Z</published>
+    <updated>2018-02-02T09:31:19.895Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;2星期前博主购买了一个GoPro Hero 5，然而博主的摄影技巧却十分渣。下面有几张在博主学校发的照片，放在这里给大家分享~&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;img src=&quot;https://yiyangwang.us/2017-05-30/gopro-evaluation/2.JPG&quot; alt=&quot;GoPro Hero 5&quot;&gt;
+    
+    </summary>
+    
+    
+      <category term="Life" scheme="https://yiyangwang.us/tags/Life/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在 Hexo 静态博客系统中安装 Hashover 评论系统</title>
+    <link href="https://yiyangwang.us/2017-05-27/hashover-setup/"/>
+    <id>https://yiyangwang.us/2017-05-27/hashover-setup/</id>
+    <published>2017-05-27T13:06:05.000Z</published>
+    <updated>2018-02-02T09:31:19.918Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Hexo作为一个很成熟的静态博客系统, 有着静态博客的众多优点，部署方便，反应迅速。但同时静态博客也有一个缺点——&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;没有自带的评论系统&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这篇文章就将介绍，如何搭建Hashover评论系统&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="https://yiyangwang.us/tags/Linux/"/>
+    
+      <category term="Network" scheme="https://yiyangwang.us/tags/Network/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>评论系统 (hashover) 上线测试</title>
+    <link href="https://yiyangwang.us/2017-05-20/thanks-god/"/>
+    <id>https://yiyangwang.us/2017-05-20/thanks-god/</id>
+    <published>2017-05-20T12:38:42.000Z</published>
+    <updated>2018-02-02T09:31:20.135Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Thanks-God&quot;&gt;&lt;a href=&quot;#Thanks-God&quot; class=&quot;headerlink&quot; title=&quot;Thanks God&quot;&gt;&lt;/a&gt;Thanks God&lt;/h2&gt;&lt;p&gt;感谢上帝&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="test" scheme="https://yiyangwang.us/tags/test/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>7天参加初二学农活动 (1)</title>
+    <link href="https://yiyangwang.us/2017-05-13/learning-agricultural-production-1/"/>
+    <id>https://yiyangwang.us/2017-05-13/learning-agricultural-production-1/</id>
+    <published>2017-05-13T13:40:51.000Z</published>
+    <updated>2018-02-02T09:31:19.918Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这里是Tony, 在今年4月份刚刚参加完这个学农活动，后来因为学业的原因，直到现在才把相关文件扫描完毕并且发上来，我们来看博主学校和中国农业机械化研究院相关文件的问题。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="Life" scheme="https://yiyangwang.us/tags/Life/"/>
+    
+  </entry>
+  
+</feed>
