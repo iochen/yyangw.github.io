@@ -428,6 +428,21 @@
 
       
       
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
+      
       
 
       
@@ -850,6 +865,18 @@
 
   <script>
     
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "default";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Twitter,Facebook,GooglePlus,Wechat";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
     
       flOptions = {};
       
@@ -859,7 +886,7 @@
       
           flOptions.position = "middleRight";
       
-          flOptions.networks = "Wechat,Twitter,Facebook,GooglePlus";
+          flOptions.networks = "Twitter,Facebook,GooglePlus";
       
       new needShareButton('#needsharebutton-float', flOptions);
     
