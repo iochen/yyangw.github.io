@@ -841,6 +841,18 @@
 
   <script>
     
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "default";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Twitter,Facebook,GooglePlus,Wechat";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
     
       flOptions = {};
       
@@ -850,7 +862,7 @@
       
           flOptions.position = "middleRight";
       
-          flOptions.networks = "Wechat,Twitter,Facebook,GooglePlus";
+          flOptions.networks = "Twitter,Facebook,GooglePlus";
       
       new needShareButton('#needsharebutton-float', flOptions);
     

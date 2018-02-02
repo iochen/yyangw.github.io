@@ -480,19 +480,19 @@ gitment:
 needmoreshare2:
   enable: true
   postbottom:
-    enable: false
+    enable: true
     options:
       iconStyle: default
       boxForm: horizontal
       position: bottomCenter
-      networks: Twitter,Facebook,Wechat
+      networks: 'Twitter,Facebook,GooglePlus,Wechat'
   float:
     enable: true
     options:
       iconStyle: default
       boxForm: horizontal
       position: middleRight
-      networks: 'Wechat,Twitter,Facebook,GooglePlus'
+      networks: 'Twitter,Facebook,GooglePlus'
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
