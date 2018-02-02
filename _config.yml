@@ -78,8 +78,8 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:yyangw/yiyangwang-us-source.git
-  branch: html
+  repo: git@github.com:yyangw/yyangw.github.io.git
+  branch: master
 
 sitemap:
     path: sitemap.xml
