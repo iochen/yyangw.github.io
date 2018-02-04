@@ -1,3 +1,9 @@
+---
+title: Problem Description - 1
+date: 2018-2-4 20:21:07
+tags: Problem Description
+---
+
 # Problem Description
 
 There is an undirected graph consisting of n vertices and m edges. Initially, two persons are at vertices a and b, respectively. In one step where they are not in the same room, each person has probability pi of staying at his original position. If not, he moves to an adjacant vertex with equal probability. Output the probabilities for them to meet at each room. n<=22, m<=n*(n-1)/2, 0.01<=pi<=0.99
