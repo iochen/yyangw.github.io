@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yiyangwang.us/"/>
-  <updated>2018-02-02T09:31:20.085Z</updated>
+  <updated>2018-02-04T12:22:05.498Z</updated>
   <id>https://yiyangwang.us/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Problem Description - 1</title>
+    <link href="https://yiyangwang.us/2018-02-04/codeforces-113D-museum/"/>
+    <id>https://yiyangwang.us/2018-02-04/codeforces-113D-museum/</id>
+    <published>2018-02-04T12:21:07.000Z</published>
+    <updated>2018-02-04T12:22:05.498Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Problem-Description&quot;&gt;&lt;a href=&quot;#Problem-Description&quot; class=&quot;headerlink&quot; title=&quot;Problem Description&quot;&gt;&lt;/a&gt;Problem Description&lt;/h1&gt;&lt;p&gt;Th
+      
+    
+    </summary>
+    
+    
+      <category term="Problem Description" scheme="https://yiyangwang.us/tags/Problem-Description/"/>
+    
+  </entry>
   
   <entry>
     <title>悉数 Arch Linux 安装过程中踩过的那些坑</title>
@@ -91,9 +112,9 @@
     </summary>
     
     
-      <category term="SDR" scheme="https://yiyangwang.us/tags/SDR/"/>
-    
       <category term="Windows" scheme="https://yiyangwang.us/tags/Windows/"/>
+    
+      <category term="SDR" scheme="https://yiyangwang.us/tags/SDR/"/>
     
   </entry>
   
@@ -411,24 +432,6 @@
     
     
       <category term="test" scheme="https://yiyangwang.us/tags/test/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>7天参加初二学农活动 (1)</title>
-    <link href="https://yiyangwang.us/2017-05-13/learning-agricultural-production-1/"/>
-    <id>https://yiyangwang.us/2017-05-13/learning-agricultural-production-1/</id>
-    <published>2017-05-13T13:40:51.000Z</published>
-    <updated>2018-02-02T09:31:19.918Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;这里是Tony, 在今年4月份刚刚参加完这个学农活动，后来因为学业的原因，直到现在才把相关文件扫描完毕并且发上来，我们来看博主学校和中国农业机械化研究院相关文件的问题。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="Life" scheme="https://yiyangwang.us/tags/Life/"/>
     
   </entry>
   

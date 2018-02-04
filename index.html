@@ -294,6 +294,133 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://yiyangwang.us/2018-02-04/codeforces-113D-museum/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="@YYangW">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://yiyangwang.us/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Yiyang Wang">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018-02-04/codeforces-113D-museum/" itemprop="url">Problem Description - 1</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-04T20:21:07+08:00">02-04-2018</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Problem-Description"><a href="#Problem-Description" class="headerlink" title="Problem Description"></a>Problem Description</h1><p>There is an undirected graph consisting of n vertices and m edges. Initially, two persons are at vertices a and b, respectively. In one step where they are not in the same room, each person has probability pi of staying at his original position. If not, he moves to an adjacant vertex with equal probability. Output the probabilities for them to meet at each room. n&lt;=22, m&lt;=n*(n-1)/2, 0.01&lt;=pi&lt;=0.99</p>
+<h1 id="Analysis"><a href="#Analysis" class="headerlink" title="Analysis"></a>Analysis</h1><p>We can build a probability matrix of moving from vertex i to j. Let’s call the probability of moving from vertex x to vertex y p(x,y).</p>
+<p>Note that we can calculate the probability for each vertex. Suppose that the current vertex is i and f(x,y) denotes the probability to reach state (i,i) from state (x,y).</p>
+<p>Certainly, f(i,i) = 1, f(s,s) = 0 for s!=i, and f(x,y) = sigma i = 1 to n sigma j = 1 to n p(x,i) <em> p(y,j) </em> f(i,j) for x!=y.</p>
+<p>To solve this system, we need to use Gaussian elimination. If we use Gaussian elimination for all vertices, the time complexity will be O(n^7), which is not sufficiant.</p>
+<p>After observing the coefficient matrix, we can see that all coefficient matrices in eliminations are the same. Therefore, we can calculate the inverse of the matrix, and multiply it with the value matrix. The row denoting the state of (a,b) will be the answer. With this method, the time complexity is reduced to O(n^6), and we can pass the problem.</p>
+<h1 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h1><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> mp[<span class="number">22</span>][<span class="number">22</span>],deg[<span class="number">22</span>];</span><br><span class="line"><span class="keyword">double</span> stay[<span class="number">22</span>],go[<span class="number">22</span>][<span class="number">22</span>],lm[<span class="number">484</span>][<span class="number">968</span>],mul[<span class="number">484</span>][<span class="number">22</span>],res[<span class="number">484</span>][<span class="number">22</span>];</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">double</span> EPS=<span class="number">1e-10</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> n,m,a,b;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d%d%d%d"</span>,&amp;n,&amp;m,&amp;a,&amp;b);</span><br><span class="line">	--a;</span><br><span class="line">	--b;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;m;++i)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">int</span> u,v;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>,&amp;u,&amp;v);</span><br><span class="line">		--u;</span><br><span class="line">		--v;</span><br><span class="line">		mp[u][v]=mp[v][u]=<span class="number">1</span>;</span><br><span class="line">		++deg[u];</span><br><span class="line">		++deg[v];</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;++i)</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">"%lf"</span>,stay+i);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;++i)</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;n;++j)</span><br><span class="line">			go[i][j]=(i==j?stay[i]:mp[i][j]*(<span class="number">1.0</span>-stay[i])/deg[i]);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;++i)</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;n;++j)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">if</span> (i==j)</span><br><span class="line">			&#123;</span><br><span class="line">				lm[i*n+j][i*n+j]=<span class="number">1.0</span>;</span><br><span class="line">				<span class="keyword">continue</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			lm[i*n+j][i*n+j]=<span class="number">-1</span>;</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> k=<span class="number">0</span>;k&lt;n;++k)</span><br><span class="line">				<span class="keyword">for</span> (<span class="keyword">int</span> l=<span class="number">0</span>;l&lt;n;++l)</span><br><span class="line">					lm[i*n+j][k*n+l]+=go[i][k]*go[j][l];</span><br><span class="line">		&#125;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;++i)</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;n;++j)</span><br><span class="line">			lm[i*n+j][n*n+i*n+j]=<span class="number">1.0</span>;</span><br><span class="line">	<span class="keyword">int</span> n2=n*n;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n2;++i)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">int</span> p=i;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j=i+<span class="number">1</span>;j&lt;n2;++j)</span><br><span class="line">			<span class="keyword">if</span> (<span class="built_in">abs</span>(lm[j][i])&gt;<span class="built_in">abs</span>(lm[p][i]))</span><br><span class="line">				p=j;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;<span class="number">2</span>*n2;++j)</span><br><span class="line">			swap(lm[p][j],lm[i][j]);</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">2</span>*n2<span class="number">-1</span>;j&gt;=i;--j)</span><br><span class="line">			lm[i][j]/=lm[i][i];</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j=i+<span class="number">1</span>;j&lt;n2;++j)</span><br><span class="line">			<span class="keyword">if</span> (<span class="built_in">abs</span>(lm[j][i])&gt;EPS)</span><br><span class="line">			&#123;</span><br><span class="line">				<span class="keyword">double</span> scale_factor=lm[j][i];</span><br><span class="line">				<span class="keyword">for</span> (<span class="keyword">int</span> k=i;k&lt;<span class="number">2</span>*n2;++k)</span><br><span class="line">					lm[j][k]-=scale_factor*lm[i][k];</span><br><span class="line">			&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i=n2<span class="number">-1</span>;i&gt;=<span class="number">0</span>;--i)</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j=i<span class="number">-1</span>;j&gt;=<span class="number">0</span>;--j)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">double</span> scale_factor=lm[j][i];</span><br><span class="line">			<span class="keyword">if</span> (<span class="built_in">abs</span>(scale_factor)&gt;EPS)</span><br><span class="line">				<span class="keyword">for</span> (<span class="keyword">int</span> k=<span class="number">0</span>;k&lt;<span class="number">2</span>*n2;++k)</span><br><span class="line">					lm[j][k]-=scale_factor*lm[i][k];</span><br><span class="line">		&#125;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;++i)</span><br><span class="line">		mul[i*n+i][i]=<span class="number">1.0</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n2;++i)</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;n;++j)</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> k=<span class="number">0</span>;k&lt;n2;++k)</span><br><span class="line">				res[i][j]+=lm[i][n2+k]*mul[k][j];</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;++i)</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"%.10f "</span>,res[a*n+b][i]);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"\n"</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://yiyangwang.us/2018-01-17/mistakes-in-arch-installation/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1413,131 +1540,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://yiyangwang.us/2017-07-19/rtlsdr-i-branch/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="@YYangW">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://yiyangwang.us/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Yiyang Wang">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017-07-19/rtlsdr-i-branch/" itemprop="url">使用 rtl2832u + r820t2 电视棒 i通道改装接收短波</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-19T20:17:09+08:00">07-19-2017</time>
-            
-
-            
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>博客好几天没有更新了，<del>说好了暑假每天更新一篇的呢</del>，<strong>暑假一定不能荒废掉</strong>。<br>今天这篇文章，就粗略介绍下如何利用 rtl2832u + r820t2 电视棒的i通道改装接收短波<br>  <img src="https://yiyangwang.us/2017-07-19/rtlsdr-i-branch/0.jpg" alt=""><br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017-07-19/rtlsdr-i-branch/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1589,7 +1591,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">22</span>
+                    <span class="site-state-item-count">23</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -1602,7 +1604,7 @@
                 
                 <div class="site-state-item site-state-tags">
                   <a href="/tags/index.html">
-                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
