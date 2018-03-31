@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Yiyang Wang
-subtitle: 就当我在瞎折腾
+title: 'Iyang Wang'
+subtitle: '就当我在瞎折腾 -- @YYangW_Bot'
 description: 初三学生，在这里分享 Internet 技术，以及生活的点点滴滴，希望能够给你带来快乐。想要做个萌妹纸...
-author: '@YYangW'
+author: '@YYangW_Bot'
 language: en
 timezone:
 
@@ -103,7 +103,7 @@ links:
     神楽坂 雅詩: https://www.yoooooooooo.com/yashi/
     天空之边: https://liyin.date/
     南琴浪: https://www.nanqinlang.com/
-    B C L S W L: http://love-radio.club/
+    B C L S W L: https://love-radio.club/
     比尔盖子: https://tomli.blog/
     狂放小栈: https://www.iknet.top/
 
