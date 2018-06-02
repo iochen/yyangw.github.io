@@ -54,7 +54,7 @@ keywords: "Hexo, NexT"
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
 # Set rss to specific value if you have burned your feed already.
-rss: https://yiyangwang.us/atom.xml
+rss: https://iyangw.us/atom.xml
 
 footer:
   # Specify the date when the site was setup.
@@ -179,7 +179,7 @@ links_layout: block
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
 # in site  directory(source/uploads): /uploads/avatar.gif
-avatar: https://yiyangwang.us/images/avatar.gif
+avatar: https://iyangw.us/images/avatar.gif
 
 # Table Of Contents in the Sidebar
 toc:
@@ -276,7 +276,7 @@ symbols_count_time:
 
 # Declare license on posts
 post_copyright:
-  enable: false
+  enable: true
   license: CC BY-NC-SA 3.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/3.0/
 
@@ -289,7 +289,7 @@ post_copyright:
 mobile_layout_economy: false
 
 # Android Chrome header panel color ($brand-bg / $headband-bg => $black-deep).
-android_chrome_color: "#222"
+android_chrome_color: "F5A9B8"
 
 # Custom Logo.
 # !!Only available for Default Scheme currently.
