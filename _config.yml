@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 'Iyang Wang'
-subtitle: '就当我在瞎折腾 -- @YYangW_Bot'
+title: 'IYang Wang'
+subtitle: '就当我在瞎折腾 -- @YYangW_bot'
 description: 初三学生，在这里分享 Internet 技术，以及生活的点点滴滴，希望能够给你带来快乐。想要做个萌妹纸...
 author: '@YYangW_Bot'
 language: en
@@ -12,7 +12,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://yiyangwang.us
+url: https://iyangw.us
 root: /
 permalink: :year-:month-:day/:title/
 permalink_defaults:
